@@ -5,13 +5,7 @@ export default {
 </script>
 
 <template>
-  <v-app>
-    <v-toolbar>
-      <v-item>
-        ALALALALAL
-      </v-item>
-    </v-toolbar>
-  </v-app>
+  <router-view />
 </template>
 
 <style scoped>

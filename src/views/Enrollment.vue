@@ -1,12 +1,12 @@
 <template>
-  <Header/>
+  <PetDoctorHeader/>
   <MakeAppointmentPageBody/>
-  <Footer/>
+  <PetDoctorFooter/>
 </template>
 
 <script setup>
   import MakeAppointmentPageBody from "@/components/MakeAppointmentPageBody"
-  import Header from "@/components/Header"
-  import Footer from "@/components/Footer"
+  import PetDoctorHeader from "@/components/Header"
+  import PetDoctorFooter from "@/components/Footer"
 </script>
 

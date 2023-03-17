@@ -15,11 +15,14 @@
         </v-toolbar-items>
     </v-footer>
   </v-app>
+  <router-view />
 </template>
 
 <script>
 export default {
-  name: "Footer"
+  data: () => ({
+    name: "PetDoctorFooter"
+  })
 }
 </script>
 

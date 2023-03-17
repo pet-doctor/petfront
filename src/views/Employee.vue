@@ -1,11 +1,11 @@
 <template>
-  <Header/>
+  <PetDoctorHeader/>
   <DoctorsPageBody/>
-  <Footer/>
+  <PetDoctorFooter/>
 </template>
 
 <script setup>
-  import Header from "@/components/Header"
-  import Footer from "@/components/Footer"
+  import PetDoctorHeader from "@/components/Header"
+  import PetDoctorFooter from "@/components/Footer"
   import DoctorsPageBody from "@/components/DoctorsPageBody"
 </script>

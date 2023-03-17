@@ -7,30 +7,54 @@
     </router-link>
 
     <v-toolbar-items>
-      <v-btn :to="{ name: 'Make An Appointment' }" class="text-grey-darken-3">Make An Appointment</v-btn>
-      <v-btn :to="{ name: 'Our Doctors' }" class="text-grey-darken-3">Our Doctors</v-btn>
-      <v-btn class="text-grey-darken-3">Sign in</v-btn>
+      <v-btn :to="{ name: 'Make An Appointment' }" class="text-grey-darken-3">
+        Make An Appointment
+      </v-btn>
+      <v-btn :to="{ name: 'Our Doctors' }" class="text-grey-darken-3">
+        Our Doctors
+      </v-btn>
+      <v-btn
+        v-if="!authorized"
+        @click="() => { authorized = !authorized }"
+      >
+        Sign in
+      </v-btn>
+      <v-row
+        class="pa-3"
+        v-else
+      >
+        <v-btn
+
+        >
+          Profile
+        </v-btn>
+        <v-btn
+          @click="() => { authorized = !authorized }"
+        >
+          Log Out
+        </v-btn>
+      </v-row>
     </v-toolbar-items>
 
     <v-spacer></v-spacer>
+    <v-spacer></v-spacer>
+    <v-img
+      cover
+      style="padding-top: 30px"
+      src="@/assets/raccoon-svgrepo-com.svg"
+    >
 
-    <v-layout row align-center style="max-width: 30vw; min-width:1vw;">
-      <v-text-field
-        solo
-        placeholder="Find on site"
-        single-line
-        append-icon="search"
-        background-color="#202d3f"
-        color="white"
-        hide-details
-      ></v-text-field>
-    </v-layout>
+    </v-img>
   </v-toolbar>
+  <router-view/>
 </template>
 
 <script>
 export default {
-  name: "Header"
+  data: () => ({
+    name: "PetDoctorHeader",
+    authorized: false
+  })
 }
 </script>
 
