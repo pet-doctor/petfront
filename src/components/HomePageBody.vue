@@ -82,64 +82,6 @@
 
       </v-carousel-item>
     </v-carousel>
-    <!--    <v-row class="flex-row">-->
-    <!--      <v-responsive class="flex-row align-center">-->
-    <!--        <v-select-->
-    <!--          label="Doctor category"-->
-    <!--          :items="categories"-->
-    <!--          v-model="this.chosenCategoryName"-->
-    <!--          style="width: 75%"-->
-    <!--        ></v-select>-->
-    <!--      </v-responsive>-->
-    <!--      <v-responsive class="flex-row align-center">-->
-    <!--        <v-select-->
-    <!--          label="Vet Clinic"-->
-    <!--          :items="vetClinics"-->
-    <!--          v-model="this.chosenVetClinicName"-->
-    <!--          style="width: 65%"-->
-    <!--        ></v-select>-->
-    <!--      </v-responsive>-->
-    <!--      <v-responsive class="flex-row align-center">-->
-    <!--        <v-btn-->
-    <!--          @click="showDoctors">-->
-    <!--          Find doctors-->
-    <!--        </v-btn>-->
-    <!--      </v-responsive>-->
-    <!--    </v-row>-->
-    <!--    <v-responsive v-if="this.chosenCategoryName && this.chosenCategoryDoctors.length">-->
-    <!--      <v-table class="bg-grey-lighten-3">-->
-    <!--        <thead>-->
-    <!--        <tr>-->
-    <!--          <th class="text-grey-darken-3">-->
-    <!--            Name-->
-    <!--          </th>-->
-    <!--          <th class="text-grey-darken-3">-->
-    <!--            Surname-->
-    <!--          </th>-->
-    <!--          <th class="text-grey-darken-3">-->
-    <!--            Email-->
-    <!--          </th>-->
-    <!--          <th class="text-grey-darken-3">-->
-    <!--            Office-->
-    <!--          </th>-->
-    <!--        </tr>-->
-    <!--        </thead>-->
-    <!--        <tbody>-->
-    <!--        <tr-->
-    <!--          v-for="item in chosenCategoryDoctors"-->
-    <!--          :key="item.id"-->
-    <!--        >-->
-    <!--          <td>{{ item.name }}</td>-->
-    <!--          <td>{{ item.surname }}</td>-->
-    <!--          <td>{{ item.email }}</td>-->
-    <!--          <td>{{ item.doctor_office }}</td>-->
-    <!--        </tr>-->
-    <!--        </tbody>-->
-    <!--      </v-table>-->
-    <!--    </v-responsive>-->
-    <!--    <v-responsive v-else-if="isChosen">-->
-    <!--      <v-card-text class="bg-grey-lighten-3 text-grey-darken-3">There aren't any doctors by this condition (((</v-card-text>-->
-    <!--    </v-responsive>-->
 
   </v-container>
   <v-container>
@@ -189,22 +131,22 @@
   <v-container
   >
     <v-row
-      class="pa-5 d-flex flex-row justify-start"
+      class="pa-5 d-flex flex-row justify-space-between"
     >
-      <v-row class="w-25 d-flex flex-row justify-start align-center">
+      <div class="ma-0 w-33 d-flex flex-row align-center justify-space-between">
         <v-btn
-          class="ma-10 h-75 w-25 bg-grey-lighten-3 text-grey-darken-3 font-banner"
+          class="ma-0 h-100 w-40 bg-grey-lighten-3 text-grey-darken-3 font-banner"
         >
           SIGN IN
         </v-btn>
         <v-btn
-          class="ma-10 h-75 w-25 bg-grey-lighten-3 text-grey-darken-3 font-banner"
+          class="ma-0 h-100 w-40 bg-grey-lighten-3 text-grey-darken-3 font-banner"
         >
           SIGN UP
         </v-btn>
-      </v-row>
+      </div>
       <v-btn
-        class="ma-10 h-100 w-25 bg-grey-lighten-3 text-grey-darken-3 font-banner"
+        class="ma-0 h-100 w-25 bg-grey-lighten-3 text-grey-darken-3 font-banner"
       >
         ENROLL TO THE<br>
         APPOINTMENT
